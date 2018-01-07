@@ -1,0 +1,20 @@
+[0m[[0m[31merror[0m] [0m[0m/home/fabien/sparkProj/src/main/java/com/mycompany/spark/WikipediaMapReduceByKey.java:3:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class SparkConf[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class WikipediaMapReduceByKey[0m
+[0m[[0m[31merror[0m] [0m[0m        SparkConf conf = new SparkConf()[0m
+[0m[[0m[31merror[0m] [0m[0m/home/fabien/sparkProj/src/main/java/com/mycompany/spark/WikipediaMapReduceByKey.java:3:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class SparkConf[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class WikipediaMapReduceByKey[0m
+[0m[[0m[31merror[0m] [0m[0m        SparkConf conf = new SparkConf()[0m
+[0m[[0m[31merror[0m] [0m[0m/home/fabien/sparkProj/src/main/java/com/mycompany/spark/WikipediaMapReduceByKey.java:5:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class JavaSparkContext[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class WikipediaMapReduceByKey[0m
+[0m[[0m[31merror[0m] [0m[0m        JavaSparkContext sc = new JavaSparkContext(conf);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/fabien/sparkProj/src/main/java/com/mycompany/spark/WikipediaMapReduceByKey.java:5:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class JavaSparkContext[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class WikipediaMapReduceByKey[0m
+[0m[[0m[31merror[0m] [0m[0m        JavaSparkContext sc = new JavaSparkContext(conf);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/fabien/sparkProj/src/main/java/com/mycompany/spark/WikipediaMapReduceByKey.java:8:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Tuple2[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class WikipediaMapReduceByKey[0m
+[0m[[0m[31merror[0m] [0m[0m                .mapToPair(s -> new Tuple2<String, Long>(s[0], Long.parseLong(s[2])))[0m

@@ -1,0 +1,43 @@
+Spark Command: /usr/lib64/openjdk-8/jre/bin/java -cp /home/fabien/spark/conf/:/home/fabien/spark/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host fabien --port 7077 --webui-port 8080
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+18/01/06 19:04:29 INFO Master: Started daemon with process name: 5157@fabien
+18/01/06 19:04:29 INFO SignalUtils: Registered signal handler for TERM
+18/01/06 19:04:29 INFO SignalUtils: Registered signal handler for HUP
+18/01/06 19:04:29 INFO SignalUtils: Registered signal handler for INT
+18/01/06 19:04:29 WARN Utils: Your hostname, fabien resolves to a loopback address: 127.0.0.1; using 172.26.70.231 instead (on interface wlo1)
+18/01/06 19:04:29 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+18/01/06 19:04:30 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/01/06 19:04:31 INFO SecurityManager: Changing view acls to: fabien
+18/01/06 19:04:31 INFO SecurityManager: Changing modify acls to: fabien
+18/01/06 19:04:31 INFO SecurityManager: Changing view acls groups to: 
+18/01/06 19:04:31 INFO SecurityManager: Changing modify acls groups to: 
+18/01/06 19:04:31 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(fabien); groups with view permissions: Set(); users  with modify permissions: Set(fabien); groups with modify permissions: Set()
+18/01/06 19:04:31 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+18/01/06 19:04:32 INFO Master: Starting Spark master at spark://fabien:7077
+18/01/06 19:04:32 INFO Master: Running Spark version 2.2.0
+18/01/06 19:04:32 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+18/01/06 19:04:32 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://172.26.70.231:8080
+18/01/06 19:04:32 INFO Utils: Successfully started service on port 6066.
+18/01/06 19:04:32 INFO StandaloneRestServer: Started REST server for submitting applications on port 6066
+18/01/06 19:04:33 INFO Master: I have been elected leader! New state: ALIVE
+18/01/06 19:39:20 INFO Master: Driver submitted org.apache.spark.deploy.worker.DriverWrapper
+18/01/06 19:39:25 INFO Master: 127.0.0.1:54610 got disassociated, removing it.
+18/01/06 19:39:25 INFO Master: 127.0.0.1:54614 got disassociated, removing it.
+18/01/06 19:39:25 INFO Master: 172.26.70.231:43541 got disassociated, removing it.
+18/01/06 19:43:56 INFO Master: Driver submitted org.apache.spark.deploy.worker.DriverWrapper
+18/01/06 19:44:02 INFO Master: 127.0.0.1:54788 got disassociated, removing it.
+18/01/06 19:44:02 INFO Master: 127.0.0.1:54786 got disassociated, removing it.
+18/01/06 19:44:02 INFO Master: 172.26.70.231:41611 got disassociated, removing it.
+18/01/06 19:44:52 INFO Master: Driver submitted org.apache.spark.deploy.worker.DriverWrapper
+18/01/06 19:44:58 INFO Master: 127.0.0.1:54792 got disassociated, removing it.
+18/01/06 19:44:58 INFO Master: 127.0.0.1:54794 got disassociated, removing it.
+18/01/06 19:44:58 INFO Master: 172.26.70.231:38715 got disassociated, removing it.
+18/01/06 19:48:21 INFO Master: Driver submitted org.apache.spark.deploy.worker.DriverWrapper
+18/01/06 19:48:26 INFO Master: 127.0.0.1:54834 got disassociated, removing it.
+18/01/06 19:48:26 INFO Master: 127.0.0.1:54836 got disassociated, removing it.
+18/01/06 19:48:26 INFO Master: 172.26.70.231:43105 got disassociated, removing it.
+18/01/06 19:49:31 INFO Master: Driver submitted org.apache.spark.deploy.worker.DriverWrapper
+18/01/06 19:49:36 INFO Master: 127.0.0.1:54842 got disassociated, removing it.
+18/01/06 19:49:36 INFO Master: 127.0.0.1:54840 got disassociated, removing it.
+18/01/06 19:49:36 INFO Master: 172.26.70.231:45191 got disassociated, removing it.

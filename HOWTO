@@ -1,0 +1,20 @@
+submit something ? 
+./submit computer_name:port fileToSubmit
+
+to install
+
+- RScript
+- sbt
+- maven (mvn)
+
+run scala
+
+sbt package
+
+run java
+
+mvn package
+
+run r
+
+just spark-submit

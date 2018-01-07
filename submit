@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./bin/spark-submit --master spark://$1 $2
