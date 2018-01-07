@@ -1,7 +1,25 @@
-library(SparkR)
 
+IntervRR <- function(x ){
+rr=0;
+i=1;
+l=length(x)
+while(i<l-2){
+
+if(0==i%%2){
+tempi=x[i];
+tempii=x[i+1];
+rr=rr+(tempi-tempii);
+}
+i=i+1;
+}
+meanRR<-(rr/((l-2)/2));
+return(meanRR)
+}
+
+library(SparkR)
 sparkR.session(appName = "compute-SD1andSD2")
-data<-read.csv("1.txt");
+data<-read.csv("datafrom/a2.txt");
+# data<-read.csv("1.txt");
 l<-length(data[,1]);
 x<-data[1:l-1,1];
 y<-data[2:l,1];
@@ -13,7 +31,7 @@ sd2sq=(x-mx+y-my)%*%(x-mx+y-my);
 sd2=sqrt(sd2sq/2/(l-1))[1,1];
 
 sink('./result/analysis-output')
-cat(sprintf("%f  %f", sd1,sd2))
+cat(sprintf("%f  %f  RR(x) : %f  RR(y) : %f", sd1,sd2, IntervRR(x), IntervRR(y)))
 sink()
 
 print(sd1)
