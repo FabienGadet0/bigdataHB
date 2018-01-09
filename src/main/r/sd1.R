@@ -1,3 +1,5 @@
+library(SparkR)
+sparkR.session(appName = "compute-SD1andSD2")
 
 IntervRR <- function(x ){
 rr=0;
@@ -16,10 +18,7 @@ meanRR<-(rr/((l-2)/2));
 return(meanRR)
 }
 
-library(SparkR)
-sparkR.session(appName = "compute-SD1andSD2")
-data<-read.csv("datafrom/a2.txt");
-# data<-read.csv("1.txt");
+data<-read.csv("datafrom/1.txt");
 l<-length(data[,1]);
 x<-data[1:l-1,1];
 y<-data[2:l,1];
