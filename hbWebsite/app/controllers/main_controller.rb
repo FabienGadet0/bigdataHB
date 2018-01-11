@@ -16,7 +16,7 @@ class MainController < ApplicationController
   def alert()
     sd1 = readfl(0).to_i
     sd2 = readfl(1).to_i
-    if sd1 || sd2 < 0.2
+    if (sd1 < 0.19 && sd1 > 0.025)
       "<p style='color:green'> GOOD"
     else
       "<p style='color:red'> BAD"
