@@ -1,7 +1,14 @@
 <h1 align="center">SPARK PROJECT</h1>
 
-<br /><br /><br />
+
+<%= form_for @resume, html: { multipart: true } do |f| %>
+      <%= f.text_field :name %>
+      <%= f.label :attachment %>
+      <%= f.file_field :attachment %>
+      <%= f.submit "Save", class: "btn btn-primary" %>
+   <% end %><br /><br /><br />
 <h1 align="center">INPUT FILE :</h1><br /><br />
 <h1 align="center">SD1 :<%= readfl(0) %> </h1><br />
 <h1 align="center">SD2 : <%= readfl(1) %></h1><br />
 <h1 align="center">RR :      <%= readfl(3) %>         QRS : <%= readfl(4) %></h1>
+
