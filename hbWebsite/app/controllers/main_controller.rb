@@ -13,6 +13,15 @@ class MainController < ApplicationController
     r = data.split(' ')
     r[val]
   end
+  def alert()
+    sd1 = readfl(0).to_i
+    sd2 = readfl(1).to_i
+    if sd1 || sd2 < 0.2
+      "<p style='color:green'> GOOD"
+    else
+      "<p style='color:red'> BAD"
+    end
+  end     
   #   open(uploaded_file) {|f|
   #   f.each_line {|line| puts line}
   # }
