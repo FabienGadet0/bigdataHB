@@ -30,11 +30,7 @@ sd2sq=(x-mx+y-my)%*%(x-mx+y-my);
 sd2=sqrt(sd2sq/2/(l-1))[1,1];
 
 sink('./result/analysis-output')
-cat(sprintf("%f  %f  RR(x) : %f  RR(y) : %f", sd1,sd2, IntervRR(x), IntervRR(y)))
+cat(sprintf("%f %f %f", sd1,sd2, IntervRR(x), IntervRR(y)))
 sink()
 
-print(sd1)
-print(sd2)
-# write.text(sd1, "./test")
-# write.text(sd2, "./test")
 sparkR.session.stop()

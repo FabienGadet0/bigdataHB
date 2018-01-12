@@ -1,91 +1,197 @@
-Spark Command: /usr/lib64/openjdk-8/jre/bin/java -cp /home/fabien/spark/conf/:/home/fabien/spark/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host fabien --port 7077 --webui-port 8080
+Spark Command: /usr/lib64/openjdk-8/jre/bin/java -cp /home/fabien/bigdataHB/conf/:/home/fabien/bigdataHB/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host fabien --port 7077 --webui-port 8080
 ========================================
 Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
-18/01/07 14:19:01 INFO Master: Started daemon with process name: 2481@fabien
-18/01/07 14:19:01 INFO SignalUtils: Registered signal handler for TERM
-18/01/07 14:19:01 INFO SignalUtils: Registered signal handler for HUP
-18/01/07 14:19:01 INFO SignalUtils: Registered signal handler for INT
-18/01/07 14:19:01 WARN Utils: Your hostname, fabien resolves to a loopback address: 127.0.0.1, but we couldn't find any external IP address!
-18/01/07 14:19:01 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
-18/01/07 14:19:02 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-18/01/07 14:19:02 INFO SecurityManager: Changing view acls to: fabien
-18/01/07 14:19:02 INFO SecurityManager: Changing modify acls to: fabien
-18/01/07 14:19:02 INFO SecurityManager: Changing view acls groups to: 
-18/01/07 14:19:02 INFO SecurityManager: Changing modify acls groups to: 
-18/01/07 14:19:02 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(fabien); groups with view permissions: Set(); users  with modify permissions: Set(fabien); groups with modify permissions: Set()
-18/01/07 14:19:03 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
-18/01/07 14:19:03 INFO Master: Starting Spark master at spark://fabien:7077
-18/01/07 14:19:04 INFO Master: Running Spark version 2.2.0
-18/01/07 14:19:04 INFO Utils: Successfully started service 'MasterUI' on port 8080.
-18/01/07 14:19:04 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://127.0.0.1:8080
-18/01/07 14:19:04 INFO Utils: Successfully started service on port 6066.
-18/01/07 14:19:04 INFO StandaloneRestServer: Started REST server for submitting applications on port 6066
-18/01/07 14:19:04 INFO Master: I have been elected leader! New state: ALIVE
-18/01/07 14:19:17 INFO Master: Driver submitted org.apache.spark.deploy.worker.DriverWrapper
-18/01/07 14:19:23 INFO Master: 127.0.0.1:41304 got disassociated, removing it.
-18/01/07 14:19:23 INFO Master: 127.0.0.1:43947 got disassociated, removing it.
-18/01/07 14:19:23 INFO Master: 127.0.0.1:41302 got disassociated, removing it.
-18/01/07 15:43:26 INFO Master: Driver submitted org.apache.spark.deploy.worker.DriverWrapper
-18/01/07 15:43:32 INFO Master: 127.0.0.1:43750 got disassociated, removing it.
-18/01/07 15:43:32 INFO Master: 127.0.0.1:43748 got disassociated, removing it.
-18/01/07 15:43:32 INFO Master: 192.168.43.16:44405 got disassociated, removing it.
-18/01/07 15:54:11 INFO Master: Registering app SparkR-ML-als-example
-18/01/07 15:54:11 INFO Master: Registered app SparkR-ML-als-example with ID app-20180107155411-0000
-18/01/07 15:54:44 INFO Master: Received unregister request from application app-20180107155411-0000
-18/01/07 15:54:44 INFO Master: Removing app app-20180107155411-0000
-18/01/07 15:54:44 INFO Master: 127.0.0.1:44182 got disassociated, removing it.
-18/01/07 15:54:44 INFO Master: 192.168.43.16:39115 got disassociated, removing it.
-18/01/07 15:55:15 INFO Master: Registering app SparkR-ML-randomForest-example
-18/01/07 15:55:15 INFO Master: Registered app SparkR-ML-randomForest-example with ID app-20180107155515-0001
-18/01/07 15:55:25 INFO Master: Received unregister request from application app-20180107155515-0001
-18/01/07 15:55:25 INFO Master: Removing app app-20180107155515-0001
-18/01/07 15:55:25 INFO Master: 127.0.0.1:44218 got disassociated, removing it.
-18/01/07 15:55:25 INFO Master: 192.168.43.16:33949 got disassociated, removing it.
-18/01/07 16:22:39 INFO Master: Registering app compute-SD1andSD2
-18/01/07 16:22:39 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107162239-0002
-18/01/07 16:22:59 INFO Master: Received unregister request from application app-20180107162239-0002
-18/01/07 16:22:59 INFO Master: Removing app app-20180107162239-0002
-18/01/07 16:22:59 INFO Master: 127.0.0.1:45052 got disassociated, removing it.
-18/01/07 16:22:59 INFO Master: 192.168.43.16:33687 got disassociated, removing it.
-18/01/07 16:24:26 INFO Master: Registering app compute-SD1andSD2
-18/01/07 16:24:26 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107162426-0003
-18/01/07 16:24:35 INFO Master: Received unregister request from application app-20180107162426-0003
-18/01/07 16:24:35 INFO Master: Removing app app-20180107162426-0003
-18/01/07 16:24:35 INFO Master: 127.0.0.1:45088 got disassociated, removing it.
-18/01/07 16:24:35 INFO Master: 192.168.43.16:45957 got disassociated, removing it.
-18/01/07 16:34:25 INFO Master: Registering app compute-SD1andSD2
-18/01/07 16:34:25 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107163425-0004
-18/01/07 16:34:32 INFO Master: Received unregister request from application app-20180107163425-0004
-18/01/07 16:34:32 INFO Master: Removing app app-20180107163425-0004
-18/01/07 16:34:32 INFO Master: 127.0.0.1:45324 got disassociated, removing it.
-18/01/07 16:34:32 INFO Master: 192.168.43.16:41691 got disassociated, removing it.
-18/01/07 16:40:19 INFO Master: Registering app compute-SD1andSD2
-18/01/07 16:40:19 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107164019-0005
-18/01/07 16:40:25 INFO Master: Received unregister request from application app-20180107164019-0005
-18/01/07 16:40:25 INFO Master: Removing app app-20180107164019-0005
-18/01/07 16:40:25 INFO Master: 127.0.0.1:45560 got disassociated, removing it.
-18/01/07 16:40:25 INFO Master: 192.168.43.16:37691 got disassociated, removing it.
-18/01/07 16:43:11 INFO Master: Registering app compute-SD1andSD2
-18/01/07 16:43:11 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107164311-0006
-18/01/07 16:43:17 INFO Master: Received unregister request from application app-20180107164311-0006
-18/01/07 16:43:17 INFO Master: Removing app app-20180107164311-0006
-18/01/07 16:43:17 INFO Master: 127.0.0.1:45622 got disassociated, removing it.
-18/01/07 16:43:17 INFO Master: 192.168.43.16:45359 got disassociated, removing it.
-18/01/07 16:43:38 INFO Master: Registering app compute-SD1andSD2
-18/01/07 16:43:38 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107164338-0007
-18/01/07 16:43:45 INFO Master: Received unregister request from application app-20180107164338-0007
-18/01/07 16:43:45 INFO Master: Removing app app-20180107164338-0007
-18/01/07 16:43:45 INFO Master: 127.0.0.1:45630 got disassociated, removing it.
-18/01/07 16:43:45 INFO Master: 192.168.43.16:32829 got disassociated, removing it.
-18/01/07 16:43:58 INFO Master: Registering app compute-SD1andSD2
-18/01/07 16:43:58 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107164358-0008
-18/01/07 16:44:03 INFO Master: Received unregister request from application app-20180107164358-0008
-18/01/07 16:44:03 INFO Master: Removing app app-20180107164358-0008
-18/01/07 16:44:03 INFO Master: 127.0.0.1:45638 got disassociated, removing it.
-18/01/07 16:44:03 INFO Master: 192.168.43.16:37243 got disassociated, removing it.
-18/01/07 16:51:12 INFO Master: Registering app compute-SD1andSD2
-18/01/07 16:51:12 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107165112-0009
-18/01/07 16:51:19 INFO Master: Received unregister request from application app-20180107165112-0009
-18/01/07 16:51:19 INFO Master: Removing app app-20180107165112-0009
-18/01/07 16:51:19 INFO Master: 127.0.0.1:45912 got disassociated, removing it.
-18/01/07 16:51:19 INFO Master: 192.168.43.16:46121 got disassociated, removing it.
+18/01/07 18:41:21 INFO Master: Started daemon with process name: 2806@fabien
+18/01/07 18:41:21 INFO SignalUtils: Registered signal handler for TERM
+18/01/07 18:41:21 INFO SignalUtils: Registered signal handler for HUP
+18/01/07 18:41:21 INFO SignalUtils: Registered signal handler for INT
+18/01/07 18:41:21 WARN Utils: Your hostname, fabien resolves to a loopback address: 127.0.0.1; using 172.26.70.231 instead (on interface wlo1)
+18/01/07 18:41:21 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+18/01/07 18:41:22 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/01/07 18:41:23 INFO SecurityManager: Changing view acls to: fabien
+18/01/07 18:41:23 INFO SecurityManager: Changing modify acls to: fabien
+18/01/07 18:41:23 INFO SecurityManager: Changing view acls groups to: 
+18/01/07 18:41:23 INFO SecurityManager: Changing modify acls groups to: 
+18/01/07 18:41:23 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(fabien); groups with view permissions: Set(); users  with modify permissions: Set(fabien); groups with modify permissions: Set()
+18/01/07 18:41:23 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+18/01/07 18:41:24 INFO Master: Starting Spark master at spark://fabien:7077
+18/01/07 18:41:24 INFO Master: Running Spark version 2.2.0
+18/01/07 18:41:24 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+18/01/07 18:41:24 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://172.26.70.231:8080
+18/01/07 18:41:24 INFO Utils: Successfully started service on port 6066.
+18/01/07 18:41:24 INFO StandaloneRestServer: Started REST server for submitting applications on port 6066
+18/01/07 18:41:25 INFO Master: I have been elected leader! New state: ALIVE
+18/01/07 18:41:54 INFO Master: Registering app compute-SD1andSD2
+18/01/07 18:41:54 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107184154-0000
+18/01/07 18:42:02 INFO Master: Received unregister request from application app-20180107184154-0000
+18/01/07 18:42:02 INFO Master: Removing app app-20180107184154-0000
+18/01/07 18:42:02 INFO Master: 127.0.0.1:38038 got disassociated, removing it.
+18/01/07 18:42:02 INFO Master: 172.26.70.231:34003 got disassociated, removing it.
+18/01/07 18:50:04 INFO Master: Registering app compute-SD1andSD2
+18/01/07 18:50:04 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107185004-0001
+18/01/07 18:50:10 INFO Master: Received unregister request from application app-20180107185004-0001
+18/01/07 18:50:10 INFO Master: Removing app app-20180107185004-0001
+18/01/07 18:50:10 INFO Master: 127.0.0.1:38252 got disassociated, removing it.
+18/01/07 18:50:10 INFO Master: 172.26.70.231:37719 got disassociated, removing it.
+18/01/07 18:51:53 INFO Master: Registering app compute-SD1andSD2
+18/01/07 18:51:53 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107185153-0002
+18/01/07 18:51:59 INFO Master: Received unregister request from application app-20180107185153-0002
+18/01/07 18:51:59 INFO Master: Removing app app-20180107185153-0002
+18/01/07 18:51:59 INFO Master: 127.0.0.1:38312 got disassociated, removing it.
+18/01/07 18:51:59 INFO Master: 172.26.70.231:40367 got disassociated, removing it.
+18/01/07 18:53:52 INFO Master: Registering app compute-SD1andSD2
+18/01/07 18:53:52 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107185352-0003
+18/01/07 18:53:58 INFO Master: Received unregister request from application app-20180107185352-0003
+18/01/07 18:53:58 INFO Master: Removing app app-20180107185352-0003
+18/01/07 18:53:58 INFO Master: 127.0.0.1:38362 got disassociated, removing it.
+18/01/07 18:53:58 INFO Master: 172.26.70.231:32781 got disassociated, removing it.
+18/01/07 18:56:34 INFO Master: Registering app compute-SD1andSD2
+18/01/07 18:56:34 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107185634-0004
+18/01/07 18:56:39 INFO Master: Received unregister request from application app-20180107185634-0004
+18/01/07 18:56:39 INFO Master: Removing app app-20180107185634-0004
+18/01/07 18:56:39 INFO Master: 127.0.0.1:38420 got disassociated, removing it.
+18/01/07 18:56:39 INFO Master: 172.26.70.231:39169 got disassociated, removing it.
+18/01/07 19:02:26 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:02:26 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107190226-0005
+18/01/07 19:02:32 INFO Master: Received unregister request from application app-20180107190226-0005
+18/01/07 19:02:32 INFO Master: Removing app app-20180107190226-0005
+18/01/07 19:02:32 INFO Master: 127.0.0.1:38520 got disassociated, removing it.
+18/01/07 19:02:32 INFO Master: 172.26.70.231:36239 got disassociated, removing it.
+18/01/07 19:02:40 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:02:40 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107190240-0006
+18/01/07 19:02:46 INFO Master: Received unregister request from application app-20180107190240-0006
+18/01/07 19:02:46 INFO Master: Removing app app-20180107190240-0006
+18/01/07 19:02:46 INFO Master: 127.0.0.1:38526 got disassociated, removing it.
+18/01/07 19:02:46 INFO Master: 172.26.70.231:43853 got disassociated, removing it.
+18/01/07 19:02:57 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:02:57 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107190257-0007
+18/01/07 19:03:02 INFO Master: Received unregister request from application app-20180107190257-0007
+18/01/07 19:03:02 INFO Master: Removing app app-20180107190257-0007
+18/01/07 19:03:02 INFO Master: 127.0.0.1:38530 got disassociated, removing it.
+18/01/07 19:03:02 INFO Master: 172.26.70.231:38265 got disassociated, removing it.
+18/01/07 19:03:17 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:03:17 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107190317-0008
+18/01/07 19:03:22 INFO Master: Received unregister request from application app-20180107190317-0008
+18/01/07 19:03:22 INFO Master: Removing app app-20180107190317-0008
+18/01/07 19:03:22 INFO Master: 127.0.0.1:38534 got disassociated, removing it.
+18/01/07 19:03:22 INFO Master: 172.26.70.231:36941 got disassociated, removing it.
+18/01/07 19:05:40 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:05:40 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107190540-0009
+18/01/07 19:05:45 INFO Master: Received unregister request from application app-20180107190540-0009
+18/01/07 19:05:45 INFO Master: Removing app app-20180107190540-0009
+18/01/07 19:05:45 INFO Master: 127.0.0.1:38576 got disassociated, removing it.
+18/01/07 19:05:45 INFO Master: 172.26.70.231:39215 got disassociated, removing it.
+18/01/07 19:05:56 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:05:56 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107190556-0010
+18/01/07 19:06:01 INFO Master: Received unregister request from application app-20180107190556-0010
+18/01/07 19:06:01 INFO Master: Removing app app-20180107190556-0010
+18/01/07 19:06:01 INFO Master: 127.0.0.1:38580 got disassociated, removing it.
+18/01/07 19:06:01 INFO Master: 172.26.70.231:37523 got disassociated, removing it.
+18/01/07 19:17:18 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:17:18 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107191718-0011
+18/01/07 19:17:23 INFO Master: Received unregister request from application app-20180107191718-0011
+18/01/07 19:17:23 INFO Master: Removing app app-20180107191718-0011
+18/01/07 19:17:23 INFO Master: 127.0.0.1:38750 got disassociated, removing it.
+18/01/07 19:17:23 INFO Master: 172.26.70.231:37503 got disassociated, removing it.
+18/01/07 19:17:56 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:17:56 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107191756-0012
+18/01/07 19:18:01 INFO Master: Received unregister request from application app-20180107191756-0012
+18/01/07 19:18:01 INFO Master: Removing app app-20180107191756-0012
+18/01/07 19:18:01 INFO Master: 127.0.0.1:38756 got disassociated, removing it.
+18/01/07 19:18:01 INFO Master: 172.26.70.231:35389 got disassociated, removing it.
+18/01/07 19:18:28 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:18:28 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107191828-0013
+18/01/07 19:18:33 INFO Master: Received unregister request from application app-20180107191828-0013
+18/01/07 19:18:33 INFO Master: Removing app app-20180107191828-0013
+18/01/07 19:18:33 INFO Master: 127.0.0.1:38764 got disassociated, removing it.
+18/01/07 19:18:33 INFO Master: 172.26.70.231:33363 got disassociated, removing it.
+18/01/07 19:18:59 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:18:59 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107191859-0014
+18/01/07 19:19:05 INFO Master: Received unregister request from application app-20180107191859-0014
+18/01/07 19:19:05 INFO Master: Removing app app-20180107191859-0014
+18/01/07 19:19:05 INFO Master: 127.0.0.1:38768 got disassociated, removing it.
+18/01/07 19:19:05 INFO Master: 172.26.70.231:37389 got disassociated, removing it.
+18/01/07 19:21:48 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:21:48 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107192148-0015
+18/01/07 19:21:53 INFO Master: Received unregister request from application app-20180107192148-0015
+18/01/07 19:21:53 INFO Master: Removing app app-20180107192148-0015
+18/01/07 19:21:53 INFO Master: 127.0.0.1:38874 got disassociated, removing it.
+18/01/07 19:21:53 INFO Master: 172.26.70.231:34537 got disassociated, removing it.
+18/01/07 19:23:15 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:23:15 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107192315-0016
+18/01/07 19:23:21 INFO Master: Received unregister request from application app-20180107192315-0016
+18/01/07 19:23:21 INFO Master: Removing app app-20180107192315-0016
+18/01/07 19:23:21 INFO Master: 127.0.0.1:38886 got disassociated, removing it.
+18/01/07 19:23:21 INFO Master: 172.26.70.231:33085 got disassociated, removing it.
+18/01/07 19:24:18 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:24:18 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107192418-0017
+18/01/07 19:24:25 INFO Master: Received unregister request from application app-20180107192418-0017
+18/01/07 19:24:25 INFO Master: Removing app app-20180107192418-0017
+18/01/07 19:24:25 INFO Master: 127.0.0.1:38894 got disassociated, removing it.
+18/01/07 19:24:25 INFO Master: 172.26.70.231:35391 got disassociated, removing it.
+18/01/07 19:25:08 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:25:08 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107192508-0018
+18/01/07 19:25:14 INFO Master: Received unregister request from application app-20180107192508-0018
+18/01/07 19:25:14 INFO Master: Removing app app-20180107192508-0018
+18/01/07 19:25:14 INFO Master: 127.0.0.1:38900 got disassociated, removing it.
+18/01/07 19:25:14 INFO Master: 172.26.70.231:42431 got disassociated, removing it.
+18/01/07 19:25:32 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:25:32 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107192532-0019
+18/01/07 19:25:38 INFO Master: Received unregister request from application app-20180107192532-0019
+18/01/07 19:25:38 INFO Master: Removing app app-20180107192532-0019
+18/01/07 19:25:38 INFO Master: 127.0.0.1:38948 got disassociated, removing it.
+18/01/07 19:25:38 INFO Master: 172.26.70.231:34525 got disassociated, removing it.
+18/01/07 19:26:00 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:26:00 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107192600-0020
+18/01/07 19:26:06 INFO Master: Received unregister request from application app-20180107192600-0020
+18/01/07 19:26:06 INFO Master: Removing app app-20180107192600-0020
+18/01/07 19:26:06 INFO Master: 127.0.0.1:38984 got disassociated, removing it.
+18/01/07 19:26:06 INFO Master: 172.26.70.231:33171 got disassociated, removing it.
+18/01/07 19:26:30 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:26:30 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107192630-0021
+18/01/07 19:26:35 INFO Master: Received unregister request from application app-20180107192630-0021
+18/01/07 19:26:35 INFO Master: Removing app app-20180107192630-0021
+18/01/07 19:26:35 INFO Master: 127.0.0.1:38994 got disassociated, removing it.
+18/01/07 19:26:35 INFO Master: 172.26.70.231:41567 got disassociated, removing it.
+18/01/07 19:30:07 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:30:07 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107193007-0022
+18/01/07 19:30:13 INFO Master: Received unregister request from application app-20180107193007-0022
+18/01/07 19:30:13 INFO Master: Removing app app-20180107193007-0022
+18/01/07 19:30:13 INFO Master: 127.0.0.1:39044 got disassociated, removing it.
+18/01/07 19:30:13 INFO Master: 172.26.70.231:46433 got disassociated, removing it.
+18/01/07 19:30:40 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:30:40 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107193040-0023
+18/01/07 19:30:46 INFO Master: Received unregister request from application app-20180107193040-0023
+18/01/07 19:30:46 INFO Master: Removing app app-20180107193040-0023
+18/01/07 19:30:46 INFO Master: 127.0.0.1:39058 got disassociated, removing it.
+18/01/07 19:30:46 INFO Master: 172.26.70.231:45151 got disassociated, removing it.
+18/01/07 19:31:07 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:31:07 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107193107-0024
+18/01/07 19:34:26 INFO Master: Received unregister request from application app-20180107193107-0024
+18/01/07 19:34:26 INFO Master: Removing app app-20180107193107-0024
+18/01/07 19:34:26 INFO Master: 127.0.0.1:39066 got disassociated, removing it.
+18/01/07 19:34:26 INFO Master: 172.26.70.231:43769 got disassociated, removing it.
+18/01/07 19:38:03 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:38:03 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107193803-0025
+18/01/07 19:38:13 INFO Master: Received unregister request from application app-20180107193803-0025
+18/01/07 19:38:13 INFO Master: Removing app app-20180107193803-0025
+18/01/07 19:38:13 INFO Master: 127.0.0.1:39166 got disassociated, removing it.
+18/01/07 19:38:13 INFO Master: 172.26.70.231:39547 got disassociated, removing it.
+18/01/07 19:38:17 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:38:17 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107193817-0026
+18/01/07 19:38:23 INFO Master: Received unregister request from application app-20180107193817-0026
+18/01/07 19:38:23 INFO Master: Removing app app-20180107193817-0026
+18/01/07 19:38:23 INFO Master: 127.0.0.1:39170 got disassociated, removing it.
+18/01/07 19:38:23 INFO Master: 172.26.70.231:40729 got disassociated, removing it.
+18/01/07 19:55:15 INFO Master: Registering app compute-SD1andSD2
+18/01/07 19:55:15 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107195515-0027
+18/01/07 19:55:22 INFO Master: Received unregister request from application app-20180107195515-0027
+18/01/07 19:55:22 INFO Master: Removing app app-20180107195515-0027
+18/01/07 19:55:22 INFO Master: 127.0.0.1:39376 got disassociated, removing it.
+18/01/07 19:55:22 INFO Master: 172.26.70.231:42971 got disassociated, removing it.
+18/01/07 21:59:23 INFO Master: Registering app compute-SD1andSD2
+18/01/07 21:59:23 INFO Master: Registered app compute-SD1andSD2 with ID app-20180107215923-0028
+18/01/07 21:59:29 INFO Master: Received unregister request from application app-20180107215923-0028
+18/01/07 21:59:29 INFO Master: Removing app app-20180107215923-0028
+18/01/07 21:59:29 INFO Master: 127.0.0.1:42518 got disassociated, removing it.
+18/01/07 21:59:29 INFO Master: 172.26.70.231:38035 got disassociated, removing it.
