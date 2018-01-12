@@ -33,3 +33,4 @@ Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
 18/01/12 14:10:21 INFO Master: Removing app app-20180112141016-0001
 18/01/12 14:10:21 INFO Master: 127.0.0.1:50938 got disassociated, removing it.
 18/01/12 14:10:21 INFO Master: 192.168.0.104:39231 got disassociated, removing it.
+18/01/12 14:33:26 ERROR Master: RECEIVED SIGNAL TERM

@@ -1,7 +1,12 @@
-<h1 align="center">SPARK PROJECT</h1>
+<h1 style="background-color:blanchedalmond; border:black 2px solid; padding-bottom:10px" align="center">SPARK PROJECT</h1>
 
-<br /><br /><br />
+<br />
 <h1 align="center">SD1 :<%= readfl(0) %> </h1><br />
 <h1 align="center">SD2 : <%= readfl(1) %></h1><br />
 <h1 align="center">RR :      <%= readfl(3) %></h1>
-<h1 align="center"><%= alert().html_safe %></h1>
+<h1 align="center"><%= alert().html_safe %></h1>    
+
+<h1 style="background-color:blanchedalmond;font-size:14px;font-family:Arial, Helvetica, sans-serif ;border:black 1px solid; padding-top:10px; padding-bottom:10px" align="center"> <%= form_tag({action: :upload}, multipart: true) do %>
+  <%= file_field_tag 'fl' %>
+  <%= button_to "Upload", :method=> "upload" %>
+<% end %> <br />if you upload a new file (must be one like in the example of the class) you need to run : <br >(and then refresh this page)<br > spark-submit sparkcluster:port thisfolder/src/main/r/sd1.R</h1>
